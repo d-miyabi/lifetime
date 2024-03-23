@@ -7,15 +7,15 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string  :name,               null: false, default: ""
       t.string  :email,              null: false, default: ""
       t.string  :encrypted_password, null: false, default: ""
-      t.date    :birth_date, null: true
+      # t.date    :birth_date, null: true
       t.string  :personal_info
-      t.integer :funeral
-      t.integer :budget, null: false
-      t.string  :chief_mourner
-      t.integer :ashes
-      t.integer :posthuomus_name
-      t.integer :belongings
-      t.string  :legacy
+      # t.integer :funeral
+      # t.integer :budget, null: false
+      # t.string  :chief_mourner
+      # t.integer :ashes
+      # t.integer :posthuomus_name
+      # t.integer :belongings
+      # t.string  :legacy
 
       ## Recoverable
       t.string   :reset_password_token
