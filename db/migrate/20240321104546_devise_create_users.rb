@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string  :encrypted_password, null: false, default: ""
       # t.date    :birth_date, null: true
       t.string  :personal_info
-      # t.integer :funeral
+      t.integer :funeral
       # t.integer :budget, null: false
       # t.string  :chief_mourner
       # t.integer :ashes

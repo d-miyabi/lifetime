@@ -23,7 +23,7 @@
 .service-items {
   display: flex;
   padding: 50px;
-  gap: 30px;
+  gap: 80px;
 }
 
 .service-item {
