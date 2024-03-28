@@ -8,8 +8,14 @@
   font-size: 80px;
   font-weight: 600;
   text-align: center;
-  background-color: #DADADA;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #eeeeee;
   border-radius: 8px 8px 8px 8px;
+}
+
+.image-container {
+  display: inline-block; 
 }
 
 .personal-sub {
@@ -32,7 +38,7 @@
   width: calc((100% - 10px * 2) / 3);
   border-radius: 8px 8px 8px 8px;
   text-align: center;
-  background-color: #DADADA;
+  background-color: #eeeeee;
 }
 
 @media not all and (min-width: 768px) {

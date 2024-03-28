@@ -1,0 +1,10 @@
+<div class="contents row">
+  <div class="container">
+    <h3>投稿する</h3>
+    <%= form_with(model: @user, local: true) do |form| %>
+      <%= form.text_field :personal_info, placeholder: "Nickname" %>
+      <%= form.text_field :funeral, placeholder: "Image Url" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>

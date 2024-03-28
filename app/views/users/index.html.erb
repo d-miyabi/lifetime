@@ -8,11 +8,15 @@
   </head>
   <body>
       <!-- 本人のこと -->
+      <% @users.each do |user| %>
       <div class="personal-page">
+      <div class="image-container">
         <%= image_tag '本人のこと.jpeg' %>
-        <div>本人のこと</div>
+        </div>
+        <%= link_to'本人のこと',user_path(user), class: "personal-page" %>
         <div class="personal-sub">自分のことを入力しましょう</div>
       </div>
+      <% end %>
 
       <!-- 内容 -->
       <div class="service-items">
