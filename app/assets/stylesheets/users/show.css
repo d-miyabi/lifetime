@@ -1,0 +1,15 @@
+.personal {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 40px;
+}
+
+.personal-title {
+  font-size: 24px;
+  color: skyblue;
+}
+
+.custom-button {
+  margin: 24px 0 0 0 ;
+}

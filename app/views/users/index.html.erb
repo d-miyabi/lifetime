@@ -22,15 +22,17 @@
       <div class="service-items">
 
         <!-- 葬式のこと -->
+        <% @users.each do |user| %>
         <div class="service-item">
-            <%= image_tag '葬式のこと.png' %>         
-          <h2>葬式のこと</h2>
+            <%= image_tag '葬式のこと.png' %>
+            <%= link_to'葬式のこと',user_path(user), class: "service-items" %>
           <p>葬式について希望を入力しましょう。</p>
         </div>
+        <% end %>
 
         <!-- 予算 -->
         <div class="service-item">
-            <%= image_tag '葬式のこと.png' %>         
+            <%= image_tag '予算.jpeg' %>         
           <h2>予算</h2>
           <p>葬式の予算を入力しましょう。</p>
         </div>
