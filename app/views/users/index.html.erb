@@ -10,11 +10,10 @@
       <!-- 本人のこと -->
       <% @users.each do |user| %>
       <div class="personal-page">
-      <div class="image-container">
-        <%= image_tag '本人のこと.jpeg' %>
-        </div>
         <%= link_to'本人のこと',user_path(user), class: "personal-page" %>
+        <%= image_tag '本人のこと.jpeg' %>
         <div class="personal-sub">自分のことを入力しましょう</div>
+        </div>
       </div>
       <% end %>
 
@@ -24,23 +23,25 @@
         <!-- 葬式のこと -->
         <% @users.each do |user| %>
         <div class="service-item">
-            <%= image_tag '葬式のこと.png' %>
-            <%= link_to'葬式のこと',user_path(user), class: "link" %>
+          <%= link_to'葬式のこと',funeral_path(user), class: "link" %>
+          <%= image_tag '葬式のこと.png' %>
           <p>葬式について希望を入力しましょう。</p>
         </div>
         <% end %>
 
         <!-- 予算 -->
+        <% @users.each do |user| %>
         <div class="service-item">
-            <%= image_tag '予算.jpeg' %>         
-          <h2>予算</h2>
+          <%= link_to'予算',funeral_path(user), class: "link" %>
+          <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
+        <% end %>
 
         <!-- 葬式のこと -->
         <div class="service-item">
-            <%= image_tag '喪主.jpeg' %>         
           <h2>喪主</h2>
+          <%= image_tag '喪主.jpeg' %>         
           <p>喪主について希望を入力しましょう。</p>
         </div>
       </div>

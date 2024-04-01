@@ -75,5 +75,6 @@ group :production do
   gem 'pg'
 end
 
+gem 'enum_help'
 gem 'pry-rails'
 gem 'devise'

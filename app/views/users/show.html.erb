@@ -3,10 +3,12 @@
     <h2>自分のことを入力する</h2>
     </div>
     <%= form_with(model: @user, local: true) do |form| %>
+    <h3>長所</h3>
+      <%= form.text_area :content, placeholder: "長所を入力しましょう", rows: 3 %>
     <h3>趣味</h3>
-      <%= form.text_field :content, placeholder: "趣味を入力しましょう" %>
+      <%= form.text_area :content, placeholder: "趣味を入力しましょう", rows: 3 %>
     <h3>特技</h3>
-      <%= form.text_field :content, placeholder: "特技を入力しましょう" %>
+      <%= form.text_area :content, placeholder: "特技を入力しましょう", rows: 3  %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
     </div>

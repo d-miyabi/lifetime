@@ -1,0 +1,12 @@
+    <div class="personal">
+    <div class="personal-title">
+    <h2>葬式の希望を入力する</h2>
+    </div>
+    <%= form_with(model: @user, local: true) do |form| %>
+    <h3>葬式</h3>
+      <%= form.text_field :funeral, placeholder: "葬式の形態" %>
+    <h3>特技</h3>
+      <%= form.text_field :content, placeholder: "特技を入力しましょう" %>
+      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    <% end %>
+    </div>
