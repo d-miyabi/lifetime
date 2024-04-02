@@ -1,0 +1,16 @@
+<div class="personal">
+    <div class="personal-title">
+    <h2>葬式に関わる予算を入力する</h2>
+    </div>
+    <%= form_with(model: @user, local: true) do |form| %>
+    <h3>戒名</h3>
+      <%= form.text_area :content, placeholder: "戒名の予算を入力しましょう"  %>
+    <h3>葬儀場</h3>
+      <%= form.text_area :content, placeholder: "葬儀場の予算を入力しましょう"  %>
+    <h3>謝礼</h3>
+      <%= form.text_area :content, placeholder: "謝礼の予算を入力しましょう"  %>
+    <h3>その他</h3>
+      <%= form.text_area :content, placeholder: "その他の予算を入力しましょう"  %>  
+      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    <% end %>
+    </div>

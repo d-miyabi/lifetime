@@ -32,7 +32,7 @@
         <!-- 予算 -->
         <% @users.each do |user| %>
         <div class="service-item">
-          <%= link_to'予算',funeral_path(user), class: "link" %>
+          <%= link_to'予算',budget_path(user), class: "link" %>
           <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
