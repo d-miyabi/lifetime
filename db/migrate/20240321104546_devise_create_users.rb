@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       # t.date    :birth_date, null: true
       t.string  :personal_info
       t.integer :funeral
-      t.integer :budget, null: false
+      t.integer :budget
       t.string  :chief_mourner
       # t.integer :ashes
       # t.integer :posthuomus_name
