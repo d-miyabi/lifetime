@@ -16,9 +16,7 @@
         <h1>LifeTime</h1>
       <% end %>
       <% if user_signed_in? %>
-      <div class="user_nav">
-      <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
-      </div>
+      <%= link_to "ログアウト", destroy_user_session_path, class: "logout-btn", data: { turbo_method: :delete } %>
       <% else %>
       <%= link_to "ログイン", new_user_session_path %>
       <%= link_to "新規登録", new_user_registration_path %>
