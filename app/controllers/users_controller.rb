@@ -3,7 +3,7 @@ before_action :move_to_index, except: [:index, :show]
 
   def index
     if user_signed_in?
-    @users = User.all
+    @users = [current_user]
     else
     @users = []
     end
