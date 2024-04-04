@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
+before_action :move_to_index, except: [:index, :show]
+
   def index
+    if user_signed_in?
     @users = User.all
+    else
+    @users = []
+    end
   end
 
   def show
@@ -19,5 +25,11 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:personal_info, :funeral)
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 end
