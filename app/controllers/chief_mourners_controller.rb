@@ -1,0 +1,2 @@
+class ChiefMournersController < ApplicationController
+end

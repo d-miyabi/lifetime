@@ -23,7 +23,7 @@
         <!-- 葬式のこと -->
         <% @users.each do |user| %>
         <div class="service-item">
-          <%= link_to'葬式のこと',funeral_path(user), class: "link" %>
+          <%= link_to'葬式のこと', funeral_path(user), class: "link" %>
           <%= image_tag '葬式のこと.png' %>
           <p>葬式について希望を入力しましょう。</p>
         </div>
@@ -32,25 +32,29 @@
         <!-- 予算 -->
         <% @users.each do |user| %>
         <div class="service-item">
-          <%= link_to'予算',budget_path(user), class: "link" %>
+          <%= link_to'予算', budget_path(user), class: "link" %>
           <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
         <% end %>
 
         <!-- 喪主 -->
+        <% @users.each do |user| %>
         <div class="service-item">
-          <h2>喪主</h2>
+          <%= link_to'喪主', chief_mourner_path(user), class: "link" %>
           <%= image_tag '喪主.jpeg' %>         
           <p>喪主について希望を入力しましょう。</p>
         </div>
+        <% end %>
 
         <!-- 遺骨 -->
+        <% @users.each do |user| %>
         <div class="service-item">
           <h2>遺骨</h2>
           <%= image_tag '遺骨.jpeg' %>         
           <p>遺骨について考えを入力しましょう。</p>
         </div>
-    </div>
+        <% end %>
+     </div>
   </body>
 </html>
