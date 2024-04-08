@@ -262,3 +262,73 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    padding: 0 100px 0 30px;
+    background-color: #E0ECFF;
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  
+  .header a {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .nav-btn {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    font-size: 0.8em;
+    color: #87CEFA;
+    text-decoration: none;
+    user-select: none;
+    border: 1px #87CEFA solid;
+    border-radius: 3px;
+    transition: 0.4s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .header {
+    display: flex;
+    padding: 0 100px 0 30px;
+    background-color: #E0ECFF;
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  
+  .header a {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .nav-btn {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    font-size: 0.8em;
+    color: #87CEFA;
+    text-decoration: none;
+    user-select: none;
+    border: 1px #87CEFA solid;
+    border-radius: 3px;
+    transition: 0.4s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
