@@ -57,11 +57,21 @@
         <% end %>
 
         <!-- 戒名 -->
+        <% @users.each do |user| %>
         <div class="service-item">
           <h2>戒名</h2>
           <%= image_tag '戒名.jpeg' %>         
           <p>戒名について考えを入力しましょう。</p>
         </div>
+        <% end %>
+      </div>
+
+        <!-- 日々の想い -->
+        <% @users.each do |user| %>
+          <div class="emotion">
+          <p>日々の想いを入力しましょう</p>
+        </div>
+        <% end %>
      </div>
   </body>
 </html>
