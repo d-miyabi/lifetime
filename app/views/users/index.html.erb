@@ -25,7 +25,7 @@
         <div class="service-item">
           <%= link_to'葬式のこと', funeral_path(user), class: "link" %>
           <%= image_tag '葬式のこと.png' %>
-          <p>葬式について希望を入力しましょう。</p>
+          <p>葬式について考えを入力しましょう。</p>
         </div>
         <% end %>
 
@@ -43,7 +43,7 @@
         <div class="service-item">
           <%= link_to'喪主', chief_mourner_path(user), class: "link" %>
           <%= image_tag '喪主.jpeg' %>         
-          <p>喪主について希望を入力しましょう。</p>
+          <p>喪主について考えを入力しましょう。</p>
         </div>
         <% end %>
 
@@ -55,6 +55,13 @@
           <p>遺骨について考えを入力しましょう。</p>
         </div>
         <% end %>
+
+        <!-- 戒名 -->
+        <div class="service-item">
+          <h2>戒名</h2>
+          <%= image_tag '戒名.jpeg' %>         
+          <p>戒名について考えを入力しましょう。</p>
+        </div>
      </div>
   </body>
 </html>
