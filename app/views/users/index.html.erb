@@ -7,71 +7,60 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <!-- 本人のこと -->
       <% @users.each do |user| %>
+
+      <!-- 本人のこと -->
       <div class="personal-page">
         <%= link_to'本人のこと',user_path(user), class: "personal-page" %>
         <%= image_tag '本人のこと.jpeg' %>
         <div class="personal-sub">自分のことを入力しましょう</div>
       </div>
-      <% end %>
 
       <!-- 内容 -->
       <div class="service-items">
 
         <!-- 葬式のこと -->
-        <% @users.each do |user| %>
         <div class="service-item">
           <%= link_to'葬式のこと', funeral_path(user), class: "link" %>
           <%= image_tag '葬式のこと.png' %>
           <p>葬式について考えを入力しましょう。</p>
         </div>
-        <% end %>
 
         <!-- 予算 -->
-        <% @users.each do |user| %>
         <div class="service-item">
           <%= link_to'予算', budget_path(user), class: "link" %>
           <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
-        <% end %>
-
+        
         <!-- 喪主 -->
-        <% @users.each do |user| %>
         <div class="service-item">
           <%= link_to'喪主', chief_mourner_path(user), class: "link" %>
           <%= image_tag '喪主.jpeg' %>         
           <p>喪主について考えを入力しましょう。</p>
         </div>
-        <% end %>
 
         <!-- 遺骨 -->
-        <% @users.each do |user| %>
         <div class="service-item">
           <h2>遺骨</h2>
           <%= image_tag '遺骨.jpeg' %>         
           <p>遺骨について考えを入力しましょう。</p>
         </div>
-        <% end %>
 
         <!-- 戒名 -->
-        <% @users.each do |user| %>
         <div class="service-item">
           <h2>戒名</h2>
           <%= image_tag '戒名.jpeg' %>         
           <p>戒名について考えを入力しましょう。</p>
         </div>
-        <% end %>
       </div>
 
         <!-- 日々の想い -->
-        <% @users.each do |user| %>
           <div class="emotion">
           <%= link_to'日々の想い・言葉', new_emotion_path(user) %>
           <p>日々の想いを入力しましょう</p>
         </div>
-        <% end %>
      </div>
+     <% end %>
   </body>
 </html>
