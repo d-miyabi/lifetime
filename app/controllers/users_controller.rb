@@ -25,7 +25,7 @@ before_action :move_to_index, except: [:index, :show]
   private
   
   def user_params
-    params.require(:user).permit(:personal_info, :funeral, :budget, :chief_mourner)
+    params.require(:user).permit(:personal_info, :funeral, :budget, :chief_mourner, :emotion)
   end
 
   def move_to_index

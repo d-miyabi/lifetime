@@ -68,7 +68,7 @@
         <!-- 日々の想い -->
         <% @users.each do |user| %>
           <div class="emotion">
-          <%= link_to'日々の想い・言葉', emotion_path(user) %>
+          <%= link_to'日々の想い・言葉', new_emotion_path(user) %>
           <p>日々の想いを入力しましょう</p>
         </div>
         <% end %>
