@@ -8,4 +8,5 @@ class User < ApplicationRecord
          enum funeral_form: { 一般葬: 0, 家族葬: 1, 喪主に任せる: 2}
 
   has_many :emotions
+  has_many :friends
 end
