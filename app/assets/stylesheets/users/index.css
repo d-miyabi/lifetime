@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  margin: 50px;
+  margin: 30px;
+  min-height: 8vh;
   font-size: 80px;
   font-weight: 600;
   text-align: center;
@@ -75,13 +76,16 @@
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  height: 24vh;
   cursor: pointer;
   color: #4d4d4d;
   background-color: #eeeeee;
   border-radius: 8px 8px 8px 8px;
 }
 
+.emotion-sub {
+  font-size: 28px;
+  margin: 40px 0 0 0;
+}
 .image-container {
   display: inline-block; 
 }
