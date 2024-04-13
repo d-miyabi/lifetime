@@ -4,12 +4,18 @@ class ChiefMournersController < ApplicationController
   end
 
   def create
-    User.create(user_params)
+    User.create(user_params[:id])
     redirect_to '/'
   end
 
+  def edit
+   @user = User.find(params[:id])
+  end
+
   def update
-    @user = User.find(params[:id])
+    user_chief_mourner = User.find(params[:id])
+    binding.pry
+    user_chief_mourner.update(user_params)
     redirect_to root_path
   end
 

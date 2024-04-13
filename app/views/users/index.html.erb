@@ -21,21 +21,21 @@
 
         <!-- 葬式のこと -->
         <div class="service-item">
-          <%= link_to'葬式のこと', funeral_path(user), class: "link" %>
+          <%= link_to'葬式のこと', edit_funeral_path(user), class: "link" %>
           <%= image_tag '葬式のこと.png' %>
           <p>葬式について考えを入力しましょう。</p>
         </div>
 
         <!-- 予算 -->
         <div class="service-item">
-          <%= link_to'予算', budget_path(user), class: "link" %>
+          <%= link_to'予算', edit_budget_path(user), class: "link" %>
           <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
         
         <!-- 喪主 -->
         <div class="service-item">
-          <%= link_to'喪主', chief_mourner_path(user), class: "link" %>
+          <%= link_to'喪主', edit_chief_mourner_path(user), class: "link" %>
           <%= image_tag '喪主.jpeg' %>         
           <p>喪主について考えを入力しましょう。</p>
         </div>

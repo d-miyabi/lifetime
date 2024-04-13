@@ -2,7 +2,7 @@
     <div class="personal-title">
     <h2>喪主について入力する</h2>
     </div>
-    <%= form_with(model: @user, local: true, method: :patch) do |form| %>
+    <%= form_with(model: @user, local: true ) do |form| %>
     <h3>氏名</h3>
       <%= form.text_area :chief_mourner, placeholder: "喪主を入力しましょう" %>
     <h3>続柄</h3>
