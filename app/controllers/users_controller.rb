@@ -18,8 +18,16 @@ before_action :move_to_index, except: [:index, :show]
   end
 
   def create
-    User.create(user_params)
-    redirect_to '/'
+    @user = User.new(user_params)
+
+    if @user.save
+      redirect_to '/'
+    else
+      render :new
+    end
+  end
+
+  def update
   end
 
   private
