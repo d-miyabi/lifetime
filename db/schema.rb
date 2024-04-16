@@ -31,7 +31,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_222224) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "personal_info"
-    t.integer "funeral"
+    t.integer "funeral_wishes"
+    t.integer "funeral_form"
     t.integer "posthumous_name_budget"
     t.integer "funeral_home_budget"
     t.integer "reword_budget"
