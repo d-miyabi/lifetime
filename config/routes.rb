@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :funerals, only: :edit
   resources :budgets, only: :edit
   resources :chief_mourners, only: :edit
+  resources :ashes, only: :edit
   resources :emotions
 end

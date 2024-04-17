@@ -1,0 +1,11 @@
+<div class="personal">
+      <h1>遺骨について学ぶ</h1>
+    <div class="personal-title">
+    <h2>遺骨の希望を入力する</h2>
+    </div>
+    <%= form_with(model: @user, local: true) do |form| %>
+    <h3>遺骨のこと(希望)</h3>
+      <%= form.select :ashes, options_for_select(User.ashes.keys)  %>
+      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    <% end %>
+    </div>
