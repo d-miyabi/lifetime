@@ -1,0 +1,2 @@
+class PosthuomusNamesController < ApplicationController
+end
