@@ -5,7 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
          enum funeral_wishes: { する: 0, しない: 1 }
-         enum funeral_form: { 一般葬: 0, 家族葬: 1, 喪主に任せる: 2}
+         enum funeral_form: { 一般葬: 0, 家族葬: 1, 喪主に任せる: 2 }
+         enum ashes: { 墓: 0, 納骨堂: 1, 自宅:2, 散骨する:3, その他:4, 喪主に任せる:5 }
 
   has_many :emotions
   has_many :friends

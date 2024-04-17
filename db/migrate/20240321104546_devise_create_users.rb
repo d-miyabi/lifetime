@@ -8,7 +8,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string  :email,              null: false, default: ""
       t.string  :encrypted_password, null: false, default: ""
       # t.date    :birth_date, null: true
-      t.string  :strengths,          default: ""
+      t.string  :strengths
       t.string  :hobbies
       t.string  :skills
       t.integer :funeral_wishes
@@ -19,7 +19,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.integer :others_budget
       t.string  :chief_mourner
       t.string  :kinship
-      # t.integer :ashes
+      t.integer :ashes
       # t.integer :posthuomus_name
       # t.integer :belongings
       # t.string  :legacy
