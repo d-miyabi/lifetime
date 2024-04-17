@@ -38,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_222224) do
     t.integer "reword_budget"
     t.integer "others_budget"
     t.string "chief_mourner"
+    t.string "kinship"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

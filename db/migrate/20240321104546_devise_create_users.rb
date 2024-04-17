@@ -16,6 +16,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.integer :reword_budget
       t.integer :others_budget
       t.string  :chief_mourner
+      t.string  :kinship
       # t.integer :ashes
       # t.integer :posthuomus_name
       # t.integer :belongings
