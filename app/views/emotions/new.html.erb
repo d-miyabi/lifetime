@@ -3,7 +3,7 @@
     <h2>日々の想い、言葉を入力する</h2>
     </div>
     <%= form_with(model: @emotion, local: true) do |form| %>
-      <%= form.text_area :emotion_text, placeholder: "日々想ったことを入力しましょう", rows: 3 %>
+      <%= form.text_area :emotion_text, placeholder: "日々想ったことを入力しましょう", rows: 20 %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
-    </div>
+ </div>
