@@ -6,6 +6,7 @@ before_action :move_to_index, except: [:index, :show]
     @users = [current_user]
     else
     @users = []
+    render :new
     end
   end
 
