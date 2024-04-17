@@ -30,7 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_222224) do
     t.string "name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "strengths"
+    t.string "strengths", default: ""
     t.string "hobbies"
     t.string "skills"
     t.integer "funeral_wishes"
