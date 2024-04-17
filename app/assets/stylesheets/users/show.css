@@ -11,5 +11,6 @@
 }
 
 .custom-button {
-  margin: 24px 0 0 0 ;
+  width: 40vw;
+  margin: 24px auto 0;
 }
