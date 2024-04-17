@@ -1,0 +1,2 @@
+class AshesController < ApplicationController
+end
