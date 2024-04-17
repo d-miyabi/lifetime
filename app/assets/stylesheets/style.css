@@ -210,6 +210,36 @@ form input[type="submit"]:hover {
   background-color: #84d3ef;
 }
 
+.top-page p {
+  animation-name: fadeInAnime;
+  animation-fill-mode:forwards;
+  animation-duration:8s;
+  animation-iteration-count:1;
+  animation-timing-function:ease;
+  animation-direction:normal;
+  opacity: 0;
+}
+
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .top-page p:nth-child(1) { animation-delay: 1s; }
+  .top-page p:nth-child(2) { animation-delay: 3s; }
+  .top-page p:nth-child(3) { animation-delay: 5s; }
+  .top-page p:nth-child(4) { animation-delay: 7s; }
+  .top-page p:nth-child(5) { animation-delay: 9s; }
+  .top-page p:nth-child(6) { animation-delay: 11s; }
+  .top-page p:nth-child(7) { animation-delay: 13s; }
+  .top-page p:nth-child(8) { animation-delay: 15s; }
+  .top-page p:nth-child(9) { animation-delay: 17s; }
+  .top-page p:nth-child(10) { animation-delay: 19s; }
+
 .container {
   margin: 20px 0;
   padding: 30px;
@@ -331,23 +361,4 @@ footer p {
   * {
     box-sizing: border-box;
   }
-
-  .top-page {
-    animation-name: fadeInAnime;
-    animation-fill-mode:backwards;
-    animation-duration:3s;
-    animation-iteration-count:infinite;
-    animation-timing-function:ease;
-    animation-delay: 0.5s;
-    animation-direction:normal;
-  }
-
-    @keyframes fadeInAnime{
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
 }
