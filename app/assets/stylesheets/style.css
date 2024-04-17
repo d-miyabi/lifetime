@@ -188,6 +188,7 @@ div.contents.row .success h3 {
 }
 
 form input,
+
 form textarea {
   width: 100%;
   margin: 5px 0 15px;
@@ -330,4 +331,23 @@ footer p {
   * {
     box-sizing: border-box;
   }
+
+  .top-page {
+    animation-name: fadeInAnime;
+    animation-fill-mode:backwards;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+    animation-delay: 0.5s;
+    animation-direction:normal;
+  }
+
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 }
