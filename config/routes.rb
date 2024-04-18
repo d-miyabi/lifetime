@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   resources :chief_mourners, only: :edit
   resources :ashes, only: :edit
   resources :posthuomus_names, :edit
+  resources :belongings, :edit
+  resources :legacies, :edit
   resources :emotions
 end
