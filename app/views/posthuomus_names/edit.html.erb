@@ -1,0 +1,11 @@
+<div class="personal">
+      <h1>葬式とは？</h1>
+    <div class="personal-title">
+    <h2>戒名</h2>
+    </div>
+    <%= form_with(model: @user, local: true) do |form| %>
+    <h3>戒名</h3>
+      <%= form.select :posthuomus_name, options_for_select(User.posthuomus_name.keys)  %>
+      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    <% end %>
+</div>
