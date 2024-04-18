@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :budgets, only: :edit
   resources :chief_mourners, only: :edit
   resources :ashes, only: :edit
-  resources :posthuomus_name, :edit
+  resources :posthuomus_names, :edit
   resources :emotions
 end

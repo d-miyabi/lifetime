@@ -5,7 +5,7 @@
     </div>
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>戒名</h3>
-      <%= form.select :posthuomus_name, options_for_select(User.posthuomus_name.keys)  %>
+      <%= form.select :posthuomus_names, options_for_select(User.posthuomus_names.keys)  %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
 </div>
