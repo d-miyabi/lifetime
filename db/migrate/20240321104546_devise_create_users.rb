@@ -21,8 +21,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string  :kinship
       t.integer :ashes
       t.integer :posthuomus_name
-      # t.integer :belongings
-      # t.string  :legacy
+      t.integer :belongings
+      t.string  :legacy
 
       ## Recoverable
       t.string   :reset_password_token
