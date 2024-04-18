@@ -1,0 +1,2 @@
+class LegaciesController < ApplicationController
+end
