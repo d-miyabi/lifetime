@@ -56,9 +56,16 @@
 
         <!-- 遺品整理 -->
         <div class="service-item">
-          <%= link_to'遺品整理', edit_belonging_path(user), class:"link" %>
+          <%= link_to'遺品整理のこと', edit_belonging_path(user), class:"link" %>
           <%= image_tag '遺品.jpeg' %>         
           <p>遺品について考えを入力しましょう。</p>
+        </div>
+
+        <!-- 遺産 -->
+        <div class="service-item">
+          <%= link_to'遺産のこと', edit_lagacies_path(user), class:"link" %>
+          <%= image_tag '遺産.jpeg' %>         
+          <p>自分の遺産について考えを入力しましょう。</p>
         </div>
 
       </div>
