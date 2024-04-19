@@ -1,0 +1,10 @@
+<div class="personal">
+    <div class="personal-title">
+    <h2>遺産について入力する</h2>
+    </div>
+    <%= form_with(model: @user, local: true) do |form| %>
+    <h3>遺産のこと(希望)</h3>
+      <%= form.select :legacies, options_for_select(User.legacies.keys)  %>
+      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    <% end %>
+</div>
