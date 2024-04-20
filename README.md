@@ -1,24 +1,23 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリケーション名
+LifeTime
+# アプリケーション概要
+普段考えない「自分の葬式」を考えるアプリです。突発的、緊急的に起こる葬式に備えることができます。自分の葬式を考えることで自分の人生を見つめ直し、大切な身近な人と会話するきっかけを作ります。
+# URL
+https://lifetime-o9ka.onrender.com/
+# テスト用アカウント
+test1@test.com
+<br>password:111111
+# 利用方法
+- 「本人のこと」から自分のことを入力する。
+- 「葬式のこと」から自分の葬式に関する考えを入力する。
+- 「予算」から葬式の予算を入力する。
+- 「喪主」から自分の葬式の喪主を入力する。
+- 「遺骨」から自分の遺骨をどうするかを入力する。
+- 「戒名」から自分の戒名について入力する。
+- 「遺品整理のこと」から自分の遺品をどうするか入力する。
+- 「遺産のこと」から自分の遺産について入力する。
+- 「友人・知人」から友人への連絡について入力する。
+- 「日々の想い・言葉」から日々思ったことを思うままに入力する。
+# アプリケーションを作成した背景
+# 実装予定の機能
+- 保存したデータをLINE、メールで送信できるようにURL作成する機能。
