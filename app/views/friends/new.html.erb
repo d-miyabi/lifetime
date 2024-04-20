@@ -1,9 +1,10 @@
 <div class="personal">
     <div class="personal-title">
-    <h2>日々の想い、言葉を入力する</h2>
+    <h2>友人・知人への連絡について入力しましょう</h2>
     </div>
-    <%= form_with(model: @emotion, local: true) do |form| %>
-      <%= form.text_area :emotion_text, placeholder: "日々想ったことを入力しましょう", rows: 20 %>
+    <%= form_with(model: @friend, local: true) do |form| %>
+      <%= form.text_area :friends_name, placeholder: "友人・知人を入力しましょう" %>
+      <%= form.text_area :contact, placeholder: "連絡方法を入力しましょう" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
  </div>
