@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   resources :posthuomus_names, :edit
   resources :belongings, :edit
   resources :legacies, :edit
-  resources :emotions
+  resources :emotions, :friends
 end
