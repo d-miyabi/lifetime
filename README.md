@@ -22,12 +22,14 @@ test1@test.com
 # 実装予定の機能
 - 保存したデータをLINE、メールで送信できるようにURL作成する機能。
 - 葬儀場、お寺などを検索する機能。
+- 葬儀が発生した時に発生する役所の手続き、To Do Listの作成。
 # データベース設計
+[![Image from Gyazo](https://i.gyazo.com/4e78b321c7e0924a35562b3b0c81d081.png)](https://gyazo.com/4e78b321c7e0924a35562b3b0c81d081)
 # 画面遷移図
 # 開発環境
 | カテゴリ | 内容 |
 | --- | --- |
-| フロントエンド | HTML,CSS |
+| フロントエンド | HTML, CSS, JavaScript |
 | バックエンド | Ruby, Rails|
 | 本番環境    | Render |
 | コード管理 | Git,GitHub |
