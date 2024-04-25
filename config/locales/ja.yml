@@ -8,3 +8,9 @@ ja:
         general_funeral: "一般葬"
         family_funeral: "家族葬"
         mourner: "喪主に任せる"
+      ashes:
+        grave: "墓"
+        ossuary: "納骨堂"
+        home: "自宅"
+        scattered_bones: "散骨する"
+        others: "その他"
