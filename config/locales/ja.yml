@@ -1,0 +1,6 @@
+ja:
+  enums:
+    user:
+      funeral_wishes:
+        do: する
+        do_not: しない
