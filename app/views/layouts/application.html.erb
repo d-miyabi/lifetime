@@ -19,6 +19,7 @@
       <% end %>
       <div class="nav">
       <% if user_signed_in? %>
+       <%= link_to "マイページ", "/users/#{current_user.id}", class: "nav-btn" %>
        <%= link_to "ログアウト", destroy_user_session_path, class: "nav-btn", data: { turbo_method: :delete } %>
       <% else %>
        <%= link_to "ログイン", new_user_session_path , class: "nav-btn" %>
