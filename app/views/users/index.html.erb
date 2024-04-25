@@ -11,7 +11,7 @@
 
       <!-- 本人のこと -->
       <div class="personal-page">
-        <%= link_to'本人のこと',user_path(user), class: "personal-page" %>
+        <%= link_to'本人のこと',edit_personal_path(user), class: "personal-page" %>
         <%= image_tag '本人のこと.jpeg' %>
         <div class="personal-sub">自分のことを入力しましょう</div>
       </div>
@@ -75,7 +75,6 @@
           <%= image_tag '友人.jpeg' %>         
           <p>友人・知人への連絡について入力しましょう。</p>
         </div>
-        
       </div>
 
         <!-- 日々の想い -->
