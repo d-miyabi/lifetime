@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'users#index'
   resources :users
+  resources :personals, only: :edit
   resources :funerals, only: :edit
   resources :budgets, only: :edit
   resources :chief_mourners, only: :edit
