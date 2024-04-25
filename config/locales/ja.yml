@@ -1,6 +1,6 @@
 ja:
-  enums:
+  enum:
     user:
       funeral_wishes:
-        do: する
-        do_not: しない
+        do: "する"
+        do_not: "しない"

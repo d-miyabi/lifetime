@@ -11,7 +11,7 @@
     </div>
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>葬式のこと(希望)</h3>
-      <%= form.select :funeral_wishes, options_for_select(User.funeral_wishes.keys)  %>
+      <%= form.select :funeral_wishes, User.funeral_wishes.keys.map { |k| [t("enum.user.funeral_wishes.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
     <h3>葬式のこと(形態)</h3>
       <%= form.select :funeral_form, options_for_select(User.funeral_forms.keys) %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
