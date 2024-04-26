@@ -27,6 +27,7 @@
     text-decoration: none;
     outline: none;
     transition: all .3s;
+    background-color: #eeeeee;
   }
   
   /*hoverをしたらボックスに影がつき、上に上がる*/
