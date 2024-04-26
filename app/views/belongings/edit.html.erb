@@ -4,7 +4,7 @@
     </div>
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>遺品のこと(希望)</h3>
-      <%= form.select :belongings, options_for_select(User.belongings.keys)  %>
+      <%= form.select :belongings, User.belongings.keys.map { |k| [t("enum.user.belongings.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
 </div>

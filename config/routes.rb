@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :budgets, only: :edit
   resources :chief_mourners, only: :edit
   resources :ashes, only: :edit
-  resources :posthuomus_names, :edit
+  resources :posthumous_names, :edit
   resources :belongings, :edit
   resources :legacies, :edit
   resources :emotions, :friends

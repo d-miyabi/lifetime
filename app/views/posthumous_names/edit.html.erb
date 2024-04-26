@@ -11,7 +11,7 @@
     </div>
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>戒名</h3>
-      <%= form.select :posthuomus_names, options_for_select(User.posthuomus_names.keys)  %>
+      <%= form.select :posthumous_name, User.posthumous_names.keys.map { |k| [t("enum.user.posthumous_name.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
 </div>

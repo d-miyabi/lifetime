@@ -1,4 +1,4 @@
-class PosthuomusNamesController < ApplicationController
+class PosthumousNamesController < ApplicationController
 
   def edit
     @user = User.find(params[:id])

@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_222224) do
     t.string "chief_mourner"
     t.string "kinship"
     t.integer "ashes"
-    t.integer "posthuomus_name"
+    t.integer "posthumous_name"
     t.integer "belongings"
     t.string "legacy"
     t.string "reset_password_token"

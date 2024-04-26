@@ -42,7 +42,7 @@ before_action :move_to_index, except: [:index, :show]
   
   def user_params
     params.require(:user).permit(:strengths, :hobbies, :skills, 
-    :funeral_wishes, :funeral_form, :posthumous_name_budget, :funeral_home_budget, :reword_budget, :others_budget, :chief_mourner, :kinship, :ashes, :posthuomus_name, :belongings, :legacy, :emotion)
+    :funeral_wishes, :funeral_form, :posthumous_name_budget, :funeral_home_budget, :reword_budget, :others_budget, :chief_mourner, :kinship, :ashes, :posthumous_name, :belongings, :legacy, :emotion)
   end
 
   def move_to_index

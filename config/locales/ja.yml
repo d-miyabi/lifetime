@@ -2,7 +2,7 @@ ja:
   enum:
     user:
       funeral_wishes:
-        do: "する"
+        conduct: "する"
         do_not: "しない"
       funeral_form:
         general_funeral: "一般葬"
@@ -14,3 +14,9 @@ ja:
         home: "自宅"
         scattered_bones: "散骨する"
         others: "その他"
+      posthumous_name:
+        on: "つける"
+        off: "つけない"
+      belongings:
+        dispose: "処分する"
+        entrust: "遺族に任せる"
