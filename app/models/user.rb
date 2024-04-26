@@ -8,7 +8,7 @@ class User < ApplicationRecord
   enum funeral_form:    { general_funeral: 0, family_funeral: 1, mourner: 2 }
   enum ashes:           { grave: 0, ossuary: 1, home: 2, scattered_bones: 3, others: 4 }
   enum posthumous_name: { on: 0, off: 1 }
-  enum belongings:      { dispose: 0, entrust: 1}
+  enum belongings:      { dispose: 0, entrust: 1 }
 
   has_many :emotions
   has_many :friends
