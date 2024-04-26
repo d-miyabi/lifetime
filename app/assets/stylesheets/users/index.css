@@ -59,10 +59,12 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(３, 1fr);
   padding: 50px;
-  gap: 1em;
+  gap: 1.5em;
   text-decoration: none;
   text-align: center;
+  color: #4d4d4d;
   font-size: 24px;
+  font-weight: 600;
 }
 
 .div1 {
