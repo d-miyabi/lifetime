@@ -3,8 +3,13 @@
   <P>長所: <%= @user.strengths %></p>
   <P>趣味: <%= @user.hobbies %></p>
   <P>特技: <%= @user.skills %></p>
-  <p>葬式の希望: <%=  t("enum.user.funeral_wishes.#{@user.funeral_wishes}") %></p>
-  <P>葬式の形態: <%= @user.funeral_form %></p>
-  <P>趣味: <%= @user.hobbies %></p>
-  <P>特技: <%= @user.skills %></p>
+  <p>葬式の希望: <%= t("enum.user.funeral_wishes.#{@user.funeral_wishes}") %></p>
+  <P>葬式の形態: <%= t("enum.user.funeral_form.#{@user.funeral_form}") %></p>
+  <P>戒名の予算: <%= @user.posthumous_name_budget %></p>
+  <P>葬儀場の予算: <%= @user.funeral_home_budget %></p>
+  <P>謝礼の予算: <%= @user.reword_budget %></p>
+  <P>その他の予算: <%= @user.others_budget %></p>
+  <p>喪主の氏名: <%= @user.chief_mourner %></p>
+  <p>喪主との関係: <%= @user.kinship %></p>
+  <p>遺骨の希望: <%= t("enum.user.ashes.#{@user.ashes}") %></p>
 </div>
