@@ -18,23 +18,22 @@
 }
 
 .nav-btn {
-    position:relative;
-    top:0;
-    padding:10px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    color: #333;
-    text-decoration: none;
-    outline: none;
-    transition: all .3s;
-    background-color: #eeeeee;
+  position:relative;
+  top:0;
+  padding:10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  transition: all .3s;
+  background-color: #eeeeee;
   }
   
-  /*hoverをしたらボックスに影がつき、上に上がる*/
-  .nav-btn {
-    top:-3px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  }
+.nav-btn {
+  top:-3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
 
 * {
   box-sizing: border-box;

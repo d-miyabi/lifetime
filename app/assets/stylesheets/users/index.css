@@ -22,6 +22,11 @@
   margin: 40px 0 0 0;
 }
 
+.personal-page:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+}
+
 /******************************************************** 
  日々の想い、言葉
 ********************************************************/
@@ -44,6 +49,11 @@
 .emotion-sub {
   font-size: 28px;
   margin: 40px 0 0 0;
+}
+
+.emotion:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
 }
 
 .image-container {
@@ -113,6 +123,12 @@
   text-align: center;
   background-color: #eeeeee;
 }
+
+.service-item:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+}
+
 
 .link {
   display: block;
