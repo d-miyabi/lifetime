@@ -11,7 +11,7 @@ before_action :move_to_index, except: [:index, :show]
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def new
