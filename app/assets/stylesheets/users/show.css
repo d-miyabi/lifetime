@@ -14,3 +14,19 @@
   width: 40vw;
   margin: 24px auto 0;
 }
+
+.mypage {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.mypage p {
+  width: 80%;
+  background: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
