@@ -12,57 +12,45 @@
       <div class="service-items">
 
       <!-- 本人のこと -->
-      <div class="div1">
       <div class="personal-page">
         <%= link_to'本人のこと',edit_personal_path(user), class: "personal-page" %>
         <%= image_tag '本人のこと.jpeg' %>
         <div class="personal-sub">自分のことを入力しましょう。</div>
       </div>
-      </div>
 
        <!-- 日々の想い -->
-       <div class="div2">
         <div class="emotion">
           <%= link_to'日々の想い・言葉', new_emotion_path(user), class: "personal-page" %>
           <%= image_tag '日々の想い.jpeg' %>
           <div class="emotion-sub">日々の想いを入力しましょう。</div>
         </div>
-        </div>
 
         <!-- 葬式のこと -->
-        <div class="div3">
         <div class="service-item">
           <%= link_to'葬式のこと', edit_funeral_path(user), class: "link" %>
           <%= image_tag '葬式のこと.png' %>
           <p>葬式について考えを入力しましょう。</p>
         </div>
-        </div>
 
         <!-- 予算 -->
-        <div class="div4">
         <div class="service-item">
           <%= link_to'予算', edit_budget_path(user), class: "link" %>
           <%= image_tag '予算.jpeg' %>         
           <p>葬式の予算を入力しましょう。</p>
         </div>
-        </div>
         
         <!-- 喪主 -->
-        <div class="div5">
         <div class="service-item">
           <%= link_to'喪主', edit_chief_mourner_path(user), class: "link" %>
           <%= image_tag '喪主.jpeg' %>         
           <p>喪主について考えを入力しましょう。</p>
         </div>
-        </div>
 
         <!-- 遺骨 -->
-        <div class="div6">
         <div class="service-item">
           <%= link_to'遺骨', edit_ash_path(user), class:"link" %>
           <%= image_tag '遺骨.jpeg' %>         
           <p>遺骨について考えを入力しましょう。</p>
-        </div>
         </div>
 
         <!-- 戒名 -->
@@ -85,7 +73,6 @@
           <%= image_tag '遺産.jpeg' %>         
           <p>自分の遺産について考えを入力しましょう。</p>
         </div>
-
 
         <!-- 友人・知人 -->
         <div class="service-item">
