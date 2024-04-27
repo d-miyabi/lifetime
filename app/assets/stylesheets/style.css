@@ -203,35 +203,44 @@ footer p {
 
 @media (max-width: 1024px) {
   .header {
-    display: flex;
-    padding: 0 100px 0 30px;
-    background-color: #E0ECFF;
-    text-align: center;
-    align-items: center;
-    font-size: 36px;
-    text-decoration: none;
-    justify-content: space-between;
+    padding: 0 50px 0 15px;
+    font-size: 28px;
   }
   
-  .header a {
-    width: 90%;
-    margin: 0 auto;
+  .footer {
+    padding: 5px 50px 5px 15px;
+    font-size: 32px;
   }
   
-  .nav-btn {
-    display: inline-block;
-    padding: 0.4em 1.6em;
-    font-size: 0.8em;
-    color: #87CEFA;
-    text-decoration: none;
-    user-select: none;
-    border: 1px #87CEFA solid;
-    border-radius: 3px;
-    transition: 0.4s ease;
+  .funeral-description, .description {
+    font-size: 16px;
+    padding: 5px;
+    width: 60vw;
+  }
+
+  form textarea {
+    margin: 2.5px 0 7.5px;
+    padding: 5px;
   }
   
-  * {
-    box-sizing: border-box;
+  form input[tyoe="submit"]{
+    font-size: 14px;
+  }
+
+  .top-page p {
+    font-size: 28px;
+  }
+
+  .container h3 {
+    font-size: 16px;
+  }
+
+  .search-form .search-btn {
+    width: 50%;
+  }
+
+  .search-form .search-btn {
+    width: 20%;
   }
 }
 

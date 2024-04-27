@@ -140,6 +140,38 @@
   font-weight: bold;
 }
 
+/* タブレット表示時 */
+@media(max-width: 1024px) {
+  .personal-page {
+    font-size: 60px;
+  }
+
+  .personal-sub,
+  .emotion-sub {
+    font-size: 20px;
+  }
+
+  .emotion {
+    font-size: 60px;
+  }
+
+  .service-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 30px;
+    gap: 1em;
+    font-size: 18px;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .link {
+    font-size: 36px;
+  }
+}
+
 /* スマホ表示時 */
 @media (max-width: 599px) {
 
