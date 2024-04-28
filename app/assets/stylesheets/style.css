@@ -50,7 +50,6 @@
   color: #555;
 }
 
-/* Text fields' focus effect */
 .login input[type="email"]:focus,
 .login input[type="password"]:focus {
   border-color: #888;
@@ -67,7 +66,6 @@
   background: #17c;
 }
 
-/* Buttons' focus effect */
 .login input[type="submit"]:focus {
   border-color: #05a;
 }
@@ -109,13 +107,13 @@
   background-color: #f5f5f5;
   top:-3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .nav-btn:hover {
+.nav-btn:hover {
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
   background-color: #e2e2e2;
-  }
+}
 
 * {
   box-sizing: border-box;
@@ -244,19 +242,6 @@ form input[type="submit"]:hover {
   color: #666;
 }
 
-.comments {
-  padding: 5px;
-  margin-top: 15px;
-}
-
-.comments a {
-  color: #57C3E9;
-}
-
-.comments a:hover {
-  text-decoration: underline;
-}
-
 footer {
   margin: 30px auto;
   padding: 10px;
@@ -280,6 +265,10 @@ footer p {
     font-size: 32px;
   }
   
+  .nav-btn {
+    flex: 1 0 50%;
+  }
+
   .funeral-description, .description {
     font-size: 16px;
     padding: 5px;
@@ -309,13 +298,23 @@ footer p {
 
 @media (max-width: 599px) {
   .header {
-    padding: 20px;
+    padding: 0 5% 0 5%;
     font-size: 24px;
   }
   
   .footer {
     padding: 5px 10px 5px 15px;
     font-size: 24px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .nav-btn {
+    flex: 1 0 60%;
+    font-size: 20px;
   }
   
   .funeral-description,
