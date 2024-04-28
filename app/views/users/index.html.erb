@@ -12,17 +12,17 @@
       <div class="service-items">
 
       <!-- 本人のこと -->
-      <div class="personal-page">
-        <%= link_to'本人のこと',edit_personal_path(user), class: "personal-page" %>
+      <div class="service-item">
+        <%= link_to'本人のこと',edit_personal_path(user), class: "link" %>
         <%= image_tag '本人のこと.jpeg' %>
-        <div class="personal-sub">自分のことを入力しましょう。</div>
+        <p>自分のことを入力しましょう。</p>
       </div>
 
        <!-- 日々の想い -->
-        <div class="emotion">
-          <%= link_to'日々の想い・言葉', new_emotion_path(user), class: "personal-page" %>
+        <div class="service-item">
+          <%= link_to'日々の想い・言葉', new_emotion_path(user), class: "link" %>
           <%= image_tag '日々の想い.jpeg' %>
-          <div class="emotion-sub">日々の想いを入力しましょう。</div>
+          <p>日々の想いを入力しましょう。</p>
         </div>
 
         <!-- 葬式のこと -->
