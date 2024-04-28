@@ -1,5 +1,5 @@
 /******************************************************** 
-　ログイン画面
+　ログイン画面、新規登録画面
 ********************************************************/
 .login {
   width: 400px;
@@ -13,7 +13,7 @@
 }
 
 .login-header {
-  background-color: #28d;
+  background-color: #0067c0;
   padding: 20px;
   font-size: 1.4em;
   font-weight: normal;
@@ -57,7 +57,7 @@
 }
 
 .login input[type="submit"] {
-  background: #28d;
+  background: #0067c0;
   border-color: transparent;
   color: #fff;
   cursor: pointer;

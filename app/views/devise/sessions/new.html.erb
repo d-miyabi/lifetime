@@ -1,15 +1,14 @@
 <div class="login">
   <h2 class="login-header">Log in</h2>
   
+    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %> 
     <form class="login-container">
-    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
         <p><%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true %>
         </p>
         <p><%= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "off" %>
         </p>
-        </form>
         
       <% if devise_mapping.rememberable? %>
         <div class="login-container">
@@ -18,6 +17,7 @@
         </div>
       <% end -%>
     <%= f.submit "ログイン" %>
+    </form>
     <% end %>
   </div>
 </div>
