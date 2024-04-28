@@ -111,6 +111,12 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
 
+  .nav-btn:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  background-color: #e2e2e2;
+  }
+
 * {
   box-sizing: border-box;
 }
@@ -261,20 +267,6 @@ footer p {
   text-align: center;
 }
 
-.search-form {
-  text-align: center;
-  padding-top: 32px;
-}
-
-.search-form .search-input {
-  width: 30%;
-  margin-right: 10px;
-}
-
-.search-form .search-btn {
-  width: 10%;
-}
-
 /* タブレット表示時 */
 
 @media (max-width: 1024px) {
@@ -311,13 +303,6 @@ footer p {
     font-size: 16px;
   }
 
-  .search-form .search-btn {
-    width: 50%;
-  }
-
-  .search-form .search-btn {
-    width: 20%;
-  }
 }
 
 /* スマホ表示時 */
