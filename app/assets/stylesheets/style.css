@@ -91,12 +91,11 @@
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
   gap:20px;
 }
 
 .nav-btn {
-  position:relative;
+  position: relative;
   top:0;
   padding:10px 20px;
   border: 1px solid #ccc;
@@ -309,12 +308,12 @@ footer p {
 
   .nav {
     display: flex;
-    flex-wrap: wrap;
     gap: 5px;
   }
+  
   .nav-btn {
-    flex: 1 0 60%;
-    font-size: 20px;
+    flex: 1 0 auto;
+    width: auto;
   }
   
   .funeral-description,
