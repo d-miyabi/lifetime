@@ -307,13 +307,12 @@ footer p {
   }
 
   .nav {
-    display: flex;
-    gap: 5px;
+    flex-direction: column;
+    gap: 10px;
   }
   
   .nav-btn {
-    flex: 1 0 auto;
-    width: auto;
+    width: 100%;
   }
   
   .funeral-description,
