@@ -1,8 +1,17 @@
- <header class>自分のこと</header>
- <div class="personal">
-    <div class="personal-title">
-    <h2>自分のことを入力する</h2>
-    </div>
+ <header class="header" >
+  <%= link_to root_path do %>
+  <div class="back-btn">戻る</div>
+  <% end %>
+    <div class="logo">
+      <h1>自分のこと</h1>
+    </div> 
+</header>
+        
+
+<div class="personal">
+  <div class="personal-title">
+  <h2>自分のことを入力する</h2>
+  </div>
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>長所</h3>
       <%= form.text_area :strengths, placeholder: "長所を入力しましょう", rows: 3 %>
@@ -12,4 +21,4 @@
       <%= form.text_area :skills, placeholder: "特技を入力しましょう", rows: 3  %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
-    </div>
+</div>
