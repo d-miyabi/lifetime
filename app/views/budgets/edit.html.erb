@@ -1,20 +1,29 @@
+<header class="header" >
+  <%= link_to root_path do %>
+  <div class="back-btn">戻る</div>
+  <% end %>
+    <div class="logo">
+      <h1>葬式の予算</h1>
+    </div> 
+</header>    
+
 <div class="personal">
-    <div class="description">
+  <div class="description">
     <h1>葬式の予算とは？</h1>
     <p>正解はありませんが、平均的に葬式全体で119万円~200万円あたりが相場と言われています。</p>
-    </div>
+  </div>
     <div class="personal-title">
-    <h2>葬式に関わる予算を入力する</h2>
+     <h2>葬式の予算を入力する</h2>
     </div>
     <%= form_with(model: @user, local: true, method: :patch ) do |form| %>
-    <h3>戒名</h3>
-      <%= form.text_area :posthumous_name_budget, placeholder: "戒名の予算を入力しましょう", cols: 30  %>
-    <h3>葬儀場</h3>
-      <%= form.text_area :funeral_home_budget, placeholder: "葬儀場の予算を入力しましょう", cols: 30  %>
-    <h3>謝礼</h3>
-      <%= form.text_area :reword_budget, placeholder: "謝礼の予算を入力しましょう", cols: 30  %>
-    <h3>その他</h3>
-      <%= form.text_area :others_budget, placeholder: "その他の予算を入力しましょう", cols: 30  %>  
-      <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+     <h3>戒名</h3>
+       <%= form.text_area :posthumous_name_budget, placeholder: "戒名の予算を入力しましょう", cols: 30  %>
+     <h3>葬儀場</h3>
+       <%= form.text_area :funeral_home_budget, placeholder: "葬儀場の予算を入力しましょう", cols: 30  %>
+     <h3>謝礼</h3>
+       <%= form.text_area :reword_budget, placeholder: "謝礼の予算を入力しましょう", cols: 30  %>
+     <h3>その他</h3>
+       <%= form.text_area :others_budget, placeholder: "その他の予算を入力しましょう", cols: 30  %>  
+       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
-    </div>
+</div>
