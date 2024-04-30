@@ -1,10 +1,10 @@
 <header class="header" style="text-align: right;" >
-      <%= link_to root_path do %>
-        <div class="logo">
-          <h1>LifeTime</h1>
-        </div>
-      <% end %>
-      <div class="nav">
+  <%= link_to root_path do %>
+  <div class="logo">
+    <h1>LifeTime</h1>
+  </div>
+  <% end %>
+    <div class="nav">
       <% if user_signed_in? %>
        <%= link_to "マイページ", "/users/#{current_user.id}", class: "nav-btn" %>
        <%= link_to "ログアウト", destroy_user_session_path, class: "nav-btn", data: { turbo_method: :delete } %>
@@ -12,5 +12,5 @@
        <%= link_to "ログイン", new_user_session_path , class: "nav-btn" %>
        <%= link_to "新規登録", new_user_registration_path, class: "nav-btn" %>
       <% end %>
-      </div>
+    </div>
 </header>
