@@ -225,6 +225,9 @@ form input[type="submit"]:hover {
   .top-page p:nth-child(8) { animation-delay: 15s; }
   .top-page p:nth-child(9) { animation-delay: 17s; }
   .top-page p:nth-child(10) { animation-delay: 19s; }
+  .top-page p:nth-child(11) { animation-delay: 21s; }
+  .top-page p:nth-child(12) { animation-delay: 23s; }
+
 
 .container {
   margin: 20px 0;
