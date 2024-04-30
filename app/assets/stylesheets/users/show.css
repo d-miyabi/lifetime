@@ -11,6 +11,7 @@
 }
 
 .custom-button {
+  height: 10vh;
   width: 40vw;
   margin: 24px auto 0;
 }
