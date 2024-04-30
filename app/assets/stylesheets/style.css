@@ -76,9 +76,11 @@
 .header {
   display: flex;
   padding: 0 100px 0 30px;
+  font-size: 36px;
   background-color: #E0ECFF;
   align-items: center;
   text-decoration: none;
+  justify-content: space-between;
 }
 
 .header a {
