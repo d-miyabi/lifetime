@@ -1,6 +1,15 @@
+<header class="header" >
+  <%= link_to root_path do %>
+  <div class="back-btn">戻る</div>
+  <% end %>
+    <div class="logo">
+      <h1>日々の想い</h1>
+    </div> 
+</header>
+
 <div class="personal">
     <div class="personal-title">
-    <h2>日々の想い、言葉を入力する</h2>
+    <h2>日々の想いを入力する</h2>
     </div>
     <%= form_with(model: @emotion, local: true) do |form| %>
       <%= form.text_area :emotion_text, placeholder: "日々想ったことを入力しましょう", rows: 20 %>
