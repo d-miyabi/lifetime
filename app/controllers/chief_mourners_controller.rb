@@ -1,7 +1,5 @@
-class ChiefMournersController < ApplicationController  
-
-  def new
-  end
+class ChiefMournersController < ApplicationController
+  def new; end
 
   def create
     User.create(user_params[:id])
@@ -9,7 +7,7 @@ class ChiefMournersController < ApplicationController
   end
 
   def edit
-   @user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   def update
@@ -20,9 +18,8 @@ class ChiefMournersController < ApplicationController
   end
 
   private
-  
+
   def user_params
     params.require(:chief_mourner).permit(:chief_mourner)
   end
-
 end
