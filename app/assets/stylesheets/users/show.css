@@ -31,6 +31,9 @@
   color: #4d4d4d;
 }
 
+.friend-content {
+}
+
 .mypage {
   display: flex;
   flex-direction: column;

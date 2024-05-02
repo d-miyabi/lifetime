@@ -1,5 +1,5 @@
 function add_form_element() {
-  const form = document.querySelector('.personal form');
+  const formContent = document.querySelector('.friend-main .friend-content');
 
   // Create new input elements
   const newInput1 = document.createElement('input');
@@ -11,8 +11,8 @@ function add_form_element() {
   newInput2.setAttribute('placeholder', '連絡方法を入力しましょう');
 
   // Append the new input fields to the form 
-  form.appendChild(newInput1);
-  form.appendChild(newInput2);
+  formContent.appendChild(newInput1);
+  formContent.appendChild(newInput2);
 }
 
 document.addEventListener('DOMContentLoaded', function() {

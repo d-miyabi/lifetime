@@ -10,8 +10,10 @@
 <div class="friend-main">
     <h2>友人・知人への連絡について入力しましょう</h2>
     <%= form_with(model: @friend, local: true) do |form| %>
+    <div class="friend-content">
       <%= form.text_area :friends_name, placeholder: "友人・知人を入力しましょう" %>
       <%= form.text_area :contact, placeholder: "連絡方法を入力しましょう" %>
+    </div>
         <button class="add-btn" type="button">追加</button>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
