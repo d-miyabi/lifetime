@@ -19,9 +19,9 @@
     <h2>喪主について入力する</h2>
     </div>
     <%= form_with(model: @user, local: true ) do |form| %>
-    <h3>氏名</h3>
+    <h3>喪主にする人の氏名</h3>
       <%= form.text_area :chief_mourner, placeholder: "喪主を入力しましょう" %>
-    <h3>続柄</h3>
+    <h3>喪主にする人の続柄・関係</h3>
       <%= form.text_area :kinship, placeholder: "喪主との関係を入力しましょう" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>

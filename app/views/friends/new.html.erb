@@ -15,6 +15,7 @@
       <%= form.text_area :friends_name, placeholder: "友人・知人を入力しましょう" %>
       <%= form.text_area :contact, placeholder: "連絡方法を入力しましょう" %>
         <button class="add-btn" onclick="add_form_element();">追加</button>
+        <script src="friends.js"></script>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
  </div>
