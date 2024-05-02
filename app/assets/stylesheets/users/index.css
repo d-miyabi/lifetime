@@ -41,10 +41,6 @@
   font-weight: bold;
 }
 
-.personal h3 {
-  color: #4d4d4d;
-}
-
 /* タブレット表示時 */
 @media(max-width: 1024px) {
   .personal-page {

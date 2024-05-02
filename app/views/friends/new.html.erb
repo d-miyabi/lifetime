@@ -7,10 +7,8 @@
    </div> 
 </header>
 
-<div class="personal">
-    <div class="personal-title">
+<div class="friend-main">
     <h2>友人・知人への連絡について入力しましょう</h2>
-    </div>
     <%= form_with(model: @friend, local: true) do |form| %>
       <%= form.text_area :friends_name, placeholder: "友人・知人を入力しましょう" %>
       <%= form.text_area :contact, placeholder: "連絡方法を入力しましょう" %>

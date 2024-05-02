@@ -10,10 +10,25 @@
   color: #4D4D4D;
 }
 
+.personal h3 {
+  color: #4d4d4d;
+}
+
 .custom-button {
   height: 10vh;
   width: 40vw;
   margin: 24px auto 0;
+}
+
+.friend-main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 40px;
+}
+
+.friend-main h2 {
+  color: #4d4d4d;
 }
 
 .mypage {
