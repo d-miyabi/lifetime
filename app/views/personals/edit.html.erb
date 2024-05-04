@@ -15,11 +15,11 @@
   <div class="content">
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>長所</h3>
-      <%= form.text_area :strengths, placeholder: "長所を入力しましょう", rows: 3 %>
+      <%= form.text_area :strengths, placeholder: "長所を入力しましょう" %>
     <h3>趣味</h3>
-      <%= form.text_area :hobbies, placeholder: "趣味を入力しましょう", rows: 3 %>
+      <%= form.text_area :hobbies, placeholder: "趣味を入力しましょう" %>
     <h3>特技</h3>
-      <%= form.text_area :skills, placeholder: "特技を入力しましょう", rows: 3  %>
+      <%= form.text_area :skills, placeholder: "特技を入力しましょう" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
   </div>
