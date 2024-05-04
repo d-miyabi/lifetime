@@ -10,17 +10,19 @@
 <div class="personal">
     <div class="description">
     <h1>戒名とは？</h1>
-    <p>故人に対してつけられるものと思われていますが、本来は生前に与えられるものです。</p>
-    <p>故人が迷わずに極楽浄土へ行く、成仏するために必要と言われています。</p>
+    <p>故人に対してつけられるものと思われていますが、<br>本来は生前に与えられるものです。</p>
+    <p>故人が迷わずに極楽浄土へ行く、<br>成仏するために必要と言われています。</p>
     <p>仏式の葬儀を行う際には必要です。</p>
     <p>外国には戒名の概念はないと言われています。</p>
     </div>
     <div class="personal-title">
-    <h2>戒名</h2>
+    <h2>戒名の希望を選択する</h2>
     </div>
+    <div class="content">
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>戒名</h3>
       <%= form.select :posthumous_name, User.posthumous_names.keys.map { |k| [t("enum.user.posthumous_name.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
+    </div>
 </div>
