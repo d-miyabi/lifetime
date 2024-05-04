@@ -8,10 +8,18 @@
 .personal-title {
   font-size: 24px;
   color: #4D4D4D;
+  margin: 0 auto;
 }
 
 .personal h3 {
   color: #4d4d4d;
+}
+
+.content {
+  display: flex;
+  width:80%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .custom-button {
