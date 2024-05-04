@@ -11,8 +11,10 @@
     <div class="personal-title">
     <h2>日々の想いを入力する</h2>
     </div>
+    <div class="content">
     <%= form_with(model: @emotion, local: true) do |form| %>
       <%= form.text_area :emotion_text, placeholder: "日々想ったことを入力しましょう", rows: 20 %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
+    </div>
  </div>
