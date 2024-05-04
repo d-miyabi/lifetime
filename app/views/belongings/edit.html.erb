@@ -15,6 +15,8 @@
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>遺品のこと(希望)</h3>
       <%= form.select :belongings, User.belongings.keys.map { |k| [t("enum.user.belongings.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
+    <h3>遺品について希望があれば入力しましょう。</h3>  
+      <%= form.text_area :legacy, placeholder: "遺品について希望を自由に書きましょう", rows: 20 %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
     </div>
