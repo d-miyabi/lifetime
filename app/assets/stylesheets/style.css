@@ -7,7 +7,7 @@
   font-size: 16px;
 }
 
-.login-header, login p {
+.login-header, .login p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -302,7 +302,7 @@ footer p {
     padding: 5px;
   }
   
-  form input[tyoe="submit"]{
+  form input[type="submit"]{
     font-size: 14px;
   }
 
@@ -313,7 +313,6 @@ footer p {
   .container h3 {
     font-size: 16px;
   }
-
 }
 
 /* スマホ表示時 */
@@ -326,7 +325,8 @@ footer p {
 
  .top-page p {
   font-size: 16px;
-  
+  }
+
   .footer {
     padding: 5px 10px 5px 15px;
     font-size: 24px;
@@ -344,7 +344,7 @@ footer p {
   .funeral-description,
   .description {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
   }
   form textarea,
   .search-form .search-input {
@@ -354,5 +354,4 @@ footer p {
   * {
     box-sizing: border-box;
   }
-}
 }
