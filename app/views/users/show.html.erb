@@ -13,6 +13,6 @@
    <p>喪主の氏名: <%= @user.chief_mourner %></p>
    <p>喪主との関係: <%= @user.kinship %></p>
    <p>遺骨の希望: <%= @user.ashes.present? ? t("enum.user.ashes.#{@user.ashes}") : '' %></p>
-   <p>戒名の希望: <%= t("enum.user.posthumous_name.#{@user.posthumous_name}") %></p>
+   <p>戒名の希望: <%= @user.posthumous_name.present? ? t("enum.user.posthumous_name.#{@user.posthumous_name}") : '' %></p>
    <p>遺品のこと: <%= t("enum.user.belongings.#{@user.belongings}") %></p>
 </div>
