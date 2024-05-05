@@ -15,7 +15,7 @@
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>遺産のこと(希望)</h3>
       <%= form.text_area :legacy, placeholder: "遺産について希望を自由に書きましょう", rows: 20 %>
-    </div>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
+    </div>
     <% end %>
 </div>
