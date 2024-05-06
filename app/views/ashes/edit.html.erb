@@ -12,9 +12,11 @@
     <div class="personal-title">
     <h2>遺骨の希望を入力する</h2>
     </div>
+    <div class="content">
     <%= form_with(model: @user, local: true) do |form| %>
     <h3>遺骨のこと(希望)</h3>
       <%= form.select :ashes, User.ashes.keys.map { |k| [t("enum.user.ashes.#{k}"), k] }, { include_blank: "指定なし" }, class: "mb-3 sm:mb-0 mr-9 border border-line-200 rounded-[3px] rounded-[3px] py-3 pl-6 w-52 h-12 font-bold" %>
       <%= form.submit "保存する", class: "custom-button", style: "display: block;" %>
     <% end %>
+    </div>
 </div>
