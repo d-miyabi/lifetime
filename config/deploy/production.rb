@@ -60,3 +60,4 @@
 #     # password: "please use keys"
 #   }
 server '54.250.0.65', user: 'ec2-user', roles: %w{app db web}
+set :branch, 'main'
