@@ -30,6 +30,7 @@ test1@test.com
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/4e78b321c7e0924a35562b3b0c81d081.png)](https://gyazo.com/4e78b321c7e0924a35562b3b0c81d081)
 # 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/cffeda60bf697e459361eae6fa93c6e4.png)](https://gyazo.com/cffeda60bf697e459361eae6fa93c6e4)
 # 開発環境
 | カテゴリ | 内容 |
 | --- | --- |
