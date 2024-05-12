@@ -22,7 +22,7 @@
         <% end %>
       </div>
 
-       <!-- 日々の想い -->
+      <!-- 日々の想い -->
       <div class="service-item">
         <%= link_to new_emotion_path(user), class: "link" do %>
         <p>日々の想い・言葉</p>
@@ -31,7 +31,7 @@
         <% end %>
       </div>
 
-        <!-- 葬式のこと -->
+      <!-- 葬式のこと -->
       <div class="service-item">
         <%= link_to edit_funeral_path(user), class: "link" do %>
         <p>葬式のこと</p>
@@ -40,12 +40,14 @@
         <% end %>
       </div>
 
-        <!-- 予算 -->
-        <div class="service-item">
-          <%= link_to'予算', edit_budget_path(user), class: "link" %>
-          <%= image_tag '予算.jpeg' %>         
-          <p>葬式の予算を考えましょう。</p>
-        </div>
+      <!-- 予算 -->
+      <div class="service-item">
+        <%= link_to edit_budget_path(user), class: "link" do %>
+        <p>予算</p>  
+        <%= image_tag '予算.jpeg' %>         
+        <button>葬式の予算を考えましょう。</button>
+        <% end %>
+      </div>
         
         <!-- 喪主のこと -->
         <div class="service-item">
