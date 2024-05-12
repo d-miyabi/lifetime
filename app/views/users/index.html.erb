@@ -9,99 +9,101 @@
 
   <%= render'layouts/new_header' %>
   <body>
-      <% @users.each do |user| %>
+    <% @users.each do |user| %>
 
-      <div class="service-items">
+       <div class="service-items">
 
-      <!-- 自分のこと -->
-      <div class="service-item">
-        <%= link_to edit_personal_path(user), class: "link" do %>
-        <p>自分のこと</p>
-        <%= image_tag '自分のこと.jpeg' %>
-        <button>自分のことを入力しましょう。</button>
-        <% end %>
-      </div>
+       <!-- 自分のこと -->
+       <div class="service-item">
+         <%= link_to edit_personal_path(user), class: "link" do %>
+         <p>自分のこと</p>
+         <%= image_tag '自分のこと.jpeg' %>
+         <button>自分のことを入力しましょう。</button>
+         <% end %>
+       </div>
 
-      <!-- 日々の想い -->
-      <div class="service-item">
-        <%= link_to new_emotion_path(user), class: "link" do %>
-        <p>日々の想い・言葉</p>
-        <%= image_tag '日々の想い.jpeg' %>
-        <button>日々の想いを入力しましょう。</button>
-        <% end %>
-      </div>
+        <!-- 日々の想い -->
+        <div class="service-item">
+          <%= link_to new_emotion_path(user), class: "link" do %>
+          <p>日々の想い・言葉</p>
+          <%= image_tag '日々の想い.jpeg' %>
+          <button>日々の想いを入力しましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 葬式のこと -->
-      <div class="service-item">
-        <%= link_to edit_funeral_path(user), class: "link" do %>
-        <p>葬式のこと</p>
-        <%= image_tag '葬式のこと.png' %>
-        <button>葬式のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 葬式のこと -->
+        <div class="service-item">
+          <%= link_to edit_funeral_path(user), class: "link" do %>
+          <p>葬式のこと</p>
+          <%= image_tag '葬式のこと.png' %>
+          <button>葬式のことを考えましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 予算 -->
-      <div class="service-item">
-        <%= link_to edit_budget_path(user), class: "link" do %>
-        <p>予算</p>  
-        <%= image_tag '予算.jpeg' %>
-        <button>葬式の予算を考えましょう。</button>
-        <% end %>
-      </div>
-        
-      <!-- 喪主のこと -->
-      <div class="service-item">
-        <%= link_to edit_chief_mourner_path(user), class: "link"  do %>
-        <p>喪主のこと</p>  
-        <%= image_tag '喪主.jpeg' %>
-        <button>喪主のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 予算 -->
+        <div class="service-item">
+          <%= link_to edit_budget_path(user), class: "link" do %>
+          <p>予算</p>  
+          <%= image_tag '予算.jpeg' %>
+          <button>葬式の予算を考えましょう。</button>
+          <% end %>
+        </div>
+          
+        <!-- 喪主のこと -->
+        <div class="service-item">
+          <%= link_to edit_chief_mourner_path(user), class: "link"  do %>
+          <p>喪主のこと</p>  
+          <%= image_tag '喪主.jpeg' %>
+          <button>喪主のことを考えましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 遺骨のこと -->
-      <div class="service-item">
-        <%= link_to edit_ash_path(user), class:"link" do %>
-        <p>遺骨のこと</p>
-        <%= image_tag '遺骨.jpeg' %>         
-        <button>遺骨のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 遺骨のこと -->
+        <div class="service-item">
+          <%= link_to edit_ash_path(user), class:"link" do %>
+          <p>遺骨のこと</p>
+          <%= image_tag '遺骨.jpeg' %>         
+          <button>遺骨のことを考えましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 戒名 -->
-      <div class="service-item">
-        <%= link_to edit_posthumous_name_path(user), class:"link" do %>
-        <p>戒名</p>
-        <%= image_tag '戒名.jpeg' %>         
-        <button>戒名のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 戒名 -->
+        <div class="service-item">
+          <%= link_to edit_posthumous_name_path(user), class:"link" do %>
+          <p>戒名</p>
+          <%= image_tag '戒名.jpeg' %>         
+          <button>戒名のことを考えましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 遺品整理 -->
-      <div class="service-item">
-        <%= link_to edit_belonging_path(user), class:"link" do %>
-        <p>遺品整理</p>  
-        <%= image_tag '遺品.jpeg' %>         
-        <button>遺品のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 遺品整理 -->
+        <div class="service-item">
+          <%= link_to edit_belonging_path(user), class:"link" do %>
+          <p>遺品整理</p>  
+          <%= image_tag '遺品.jpeg' %>         
+          <button>遺品のことを考えましょう。</button>
+          <% end %>
+        </div>
 
-      <!-- 遺産 -->
-      <div class="service-item">
-        <%= link_to edit_legacy_path(user), class:"link" do %>
-        <p>遺産</p>
-        <%= image_tag '遺産.jpeg' %>         
-        <button>自分の遺産のことを考えましょう。</button>
-        <% end %>
-      </div>
+        <!-- 遺産 -->
+        <div class="service-item">
+          <%= link_to edit_legacy_path(user), class:"link" do %>
+          <p>遺産</p>
+          <%= image_tag '遺産.jpeg' %>         
+          <button>自分の遺産のことを考えましょう。</button>
+          <% end %>
+        </div>
 
         <!-- 友人・知人 -->
         <div class="service-item">
-          <%= link_to'友人・知人', new_friend_path(user), class:"link" %>
+          <%= link_to new_friend_path(user), class:"link" do %>
+          <p>友人・知人</p>
           <%= image_tag '友人.jpeg' %>         
-          <p>友人・知人への連絡を考えましょう。</p>
+          <button>友人・知人のことを考えましょう。</button>
+          <% end %>
         </div>
-       </div> 
-      </div>
-     <% end %>
+      </div> 
+     </div>
+    <% end %>
   </body>
 </html>
