@@ -32,11 +32,13 @@
       </div>
 
         <!-- 葬式のこと -->
-        <div class="service-item">
-          <%= link_to'葬式のこと', edit_funeral_path(user), class: "link" %>
-          <%= image_tag '葬式のこと.png' %>
-          <p>葬式のことを考えましょう。</p>
-        </div>
+      <div class="service-item">
+        <%= link_to edit_funeral_path(user), class: "link" do %>
+        <p>葬式のこと</p>
+        <%= image_tag '葬式のこと.png' %>
+        <button>葬式のことを考えましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 予算 -->
         <div class="service-item">
