@@ -58,12 +58,14 @@
         <% end %>
       </div>
 
-        <!-- 遺骨のこと -->
-        <div class="service-item">
-          <%= link_to'遺骨のこと', edit_ash_path(user), class:"link" %>
-          <%= image_tag '遺骨.jpeg' %>         
-          <p>遺骨のことを考えましょう。</p>
-        </div>
+      <!-- 遺骨のこと -->
+      <div class="service-item">
+        <%= link_to edit_ash_path(user), class:"link" do %>
+        <p>遺骨のこと</p>
+        <%= image_tag '遺骨.jpeg' %>         
+        <button>遺骨のことを考えましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 戒名 -->
         <div class="service-item">
