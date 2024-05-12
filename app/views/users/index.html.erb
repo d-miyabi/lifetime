@@ -67,7 +67,7 @@
         <% end %>
       </div>
 
-        <!-- 戒名 -->
+      <!-- 戒名 -->
       <div class="service-item">
         <%= link_to edit_posthumous_name_path(user), class:"link" do %>
         <p>戒名</p>
@@ -76,14 +76,16 @@
         <% end %>
       </div>
 
-        <!-- 遺品整理 -->
-        <div class="service-item">
-          <%= link_to'遺品整理', edit_belonging_path(user), class:"link" %>
-          <%= image_tag '遺品.jpeg' %>         
-          <p>遺品のことを考えましょう。</p>
-        </div>
+      <!-- 遺品整理 -->
+      <div class="service-item">
+        <%= link_to edit_belonging_path(user), class:"link" do %>
+        <p>遺品整理</p>  
+        <%= image_tag '遺品.jpeg' %>         
+        <button>遺品のことを考えましょう。</button>
+        <% end %>
+      </div>
 
-        <!-- 遺産 -->
+      <!-- 遺産 -->
         <div class="service-item">
           <%= link_to'遺産のこと', edit_legacy_path(user), class:"link" %>
           <%= image_tag '遺産.jpeg' %>         
