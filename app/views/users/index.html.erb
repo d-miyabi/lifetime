@@ -68,11 +68,13 @@
       </div>
 
         <!-- 戒名 -->
-        <div class="service-item">
-          <%= link_to'戒名のこと', edit_posthumous_name_path(user), class:"link" %>
-          <%= image_tag '戒名.jpeg' %>         
-          <p>戒名のことを考えましょう。</p>
-        </div>
+      <div class="service-item">
+        <%= link_to edit_posthumous_name_path(user), class:"link" do %>
+        <p>戒名</p>
+        <%= image_tag '戒名.jpeg' %>         
+        <button>戒名のことを考えましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 遺品整理 -->
         <div class="service-item">
