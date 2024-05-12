@@ -44,17 +44,19 @@
       <div class="service-item">
         <%= link_to edit_budget_path(user), class: "link" do %>
         <p>予算</p>  
-        <%= image_tag '予算.jpeg' %>         
+        <%= image_tag '予算.jpeg' %>
         <button>葬式の予算を考えましょう。</button>
         <% end %>
       </div>
         
-        <!-- 喪主のこと -->
-        <div class="service-item">
-          <%= link_to'喪主のこと', edit_chief_mourner_path(user), class: "link" %>
-          <%= image_tag '喪主.jpeg' %>         
-          <p>喪主のことを考えましょう。</p>
-        </div>
+      <!-- 喪主のこと -->
+      <div class="service-item">
+        <%= link_to edit_chief_mourner_path(user), class: "link"  do %>
+        <p>喪主のこと</p>  
+        <%= image_tag '喪主.jpeg' %>
+        <button>喪主のことを考えましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 遺骨のこと -->
         <div class="service-item">
