@@ -23,11 +23,13 @@
       </div>
 
        <!-- 日々の想い -->
-        <div class="service-item">
-          <%= link_to'日々の想い・言葉', new_emotion_path(user), class: "link" %>
-          <%= image_tag '日々の想い.jpeg' %>
-          <p>日々の想いを入力しましょう。</p>
-        </div>
+      <div class="service-item">
+        <%= link_to new_emotion_path(user), class: "link" do %>
+        <p>日々の想い・言葉</p>
+        <%= image_tag '日々の想い.jpeg' %>
+        <button>日々の想いを入力しましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 葬式のこと -->
         <div class="service-item">
