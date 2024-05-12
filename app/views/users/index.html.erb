@@ -86,11 +86,13 @@
       </div>
 
       <!-- 遺産 -->
-        <div class="service-item">
-          <%= link_to'遺産のこと', edit_legacy_path(user), class:"link" %>
-          <%= image_tag '遺産.jpeg' %>         
-          <p>自分の遺産のことを考えましょう。</p>
-        </div>
+      <div class="service-item">
+        <%= link_to edit_legacy_path(user), class:"link" do %>
+        <p>遺産</p>
+        <%= image_tag '遺産.jpeg' %>         
+        <button>自分の遺産のことを考えましょう。</button>
+        <% end %>
+      </div>
 
         <!-- 友人・知人 -->
         <div class="service-item">
