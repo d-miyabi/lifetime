@@ -60,8 +60,10 @@
         <!-- 喪主のこと -->
         <div class="service-item">
           <%= link_to edit_chief_mourner_path(user), class: "link"  do %>
+          <div class="item-wrapper">
           <p>喪主のこと</p>  
           <%= image_tag '喪主.jpeg' %>
+          </div>
           <button>喪主のことを考えましょう。</button>
           <% end %>
         </div>
@@ -69,8 +71,10 @@
         <!-- 遺骨のこと -->
         <div class="service-item">
           <%= link_to edit_ash_path(user), class:"link" do %>
+          <div class="item-wrapper">
           <p>遺骨のこと</p>
-          <%= image_tag '遺骨.jpeg' %>         
+          <%= image_tag '遺骨.jpeg' %>
+          </div>
           <button>遺骨のことを考えましょう。</button>
           <% end %>
         </div>
@@ -78,8 +82,10 @@
         <!-- 戒名 -->
         <div class="service-item">
           <%= link_to edit_posthumous_name_path(user), class:"link" do %>
+          <div class="item-wrapper">
           <p>戒名</p>
-          <%= image_tag '戒名.jpeg' %>         
+          <%= image_tag '戒名.jpeg' %>
+          </div>
           <button>戒名のことを考えましょう。</button>
           <% end %>
         </div>
@@ -87,8 +93,10 @@
         <!-- 遺品整理 -->
         <div class="service-item">
           <%= link_to edit_belonging_path(user), class:"link" do %>
+          <div class="item-wrapper">
           <p>遺品整理</p>  
-          <%= image_tag '遺品.jpeg' %>         
+          <%= image_tag '遺品.jpeg' %>
+          </div>
           <button>遺品のことを考えましょう。</button>
           <% end %>
         </div>
@@ -96,8 +104,10 @@
         <!-- 遺産 -->
         <div class="service-item">
           <%= link_to edit_legacy_path(user), class:"link" do %>
+          <div class="item-wrapper">
           <p>遺産</p>
-          <%= image_tag '遺産.jpeg' %>         
+          <%= image_tag '遺産.jpeg' %>
+          </div>
           <button>自分の遺産のことを考えましょう。</button>
           <% end %>
         </div>
@@ -105,8 +115,10 @@
         <!-- 友人・知人 -->
         <div class="service-item">
           <%= link_to new_friend_path(user), class:"link" do %>
+          <div class="item-wrapper">
           <p>友人・知人</p>
-          <%= image_tag '友人.jpeg' %>         
+          <%= image_tag '友人.jpeg' %>
+          </div>
           <button>友人・知人のことを考えましょう。</button>
           <% end %>
         </div>
