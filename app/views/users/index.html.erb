@@ -16,8 +16,10 @@
        <!-- 自分のこと -->
        <div class="service-item">
          <%= link_to edit_personal_path(user), class: "link" do %>
+         <div class="item-wrapper">
          <p>自分のこと</p>
-         <%= image_tag '自分のこと.jpeg' %>
+         <%= image_tag '自分のこと.jpeg', class: "center-image" %>
+         </div>
          <button>自分のことを考えましょう。</button>
          <% end %>
        </div>
