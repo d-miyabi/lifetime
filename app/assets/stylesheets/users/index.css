@@ -18,7 +18,7 @@
 }
 
 .service-item {
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px 8px 8px 8px;
   text-align: center;
   background-color: #eeeeee;
@@ -58,10 +58,16 @@
   margin: 0 auto;
 }
 
-/* タブレット表示時 */
+/******************************************************** 
+ タブレット表示時
+********************************************************/
+
 @media(max-width: 1024px) {
+
+  /* 本人のこと */
   .personal-page {
     font-size: 60px;
+    padding: 15px;
   }
 
   .personal-sub,
@@ -73,29 +79,40 @@
     font-size: 60px;
   }
 
-  .service-items {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    padding: 30px;
-    gap: 1em;
-    font-size: 18px;
-  }
+/* 内容ページ */
 
-  .service-item {
-    padding: 15px;
-  }
-
-  .link {
-    font-size: 36px;
-  }
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 8%;
+  gap: 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  margin: auto;
+}
+.service-item {
+  font-size: 16px;
 }
 
-/* スマホ表示時 */
-@media (max-width: 599px) {
+.link {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.link button {
+  font-size: 14px;
+}
+}
 
 /******************************************************** 
- 本人のこと
+ スマホ表示時
 ********************************************************/
+
+@media (max-width: 599px) {
+
+/* 本人のこと */
 .personal-page {
   font-size: 40px;
   padding: 15px;
@@ -106,9 +123,7 @@
   margin: 20px 0 0 0;
 }
 
-/******************************************************** 
- 日々の想い、言葉
-********************************************************/
+/* 日々の想い、言葉 */
 
 .emotion {
   display: flex;
@@ -139,9 +154,7 @@
   display: inline-block; 
 }
 
-/******************************************************** 
- 内容ページ
-********************************************************/
+/* 内容ページ */
 
 .service-items {
   display: grid;
