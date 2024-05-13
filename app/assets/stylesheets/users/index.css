@@ -24,6 +24,10 @@
   background-color: #eeeeee;
 }
 
+.service-item p {
+  font-size: 36px;
+}
+
 .service-item:hover {
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
@@ -87,7 +91,7 @@
   grid-template-rows: 1fr;
   padding: 8%;
   gap: 1.5em;
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 600;
   width: 100%;
   margin: auto;
@@ -171,12 +175,17 @@
   font-size: 16px;
 }
 
+.service-item p {
+  font-size: 24px;
+}
+
+
 .link {
   font-size: 24px;
   padding: 10px;
 }
 
 .link button {
-  font-size: 14px;
+  font-size: 12px;
 }
 }
