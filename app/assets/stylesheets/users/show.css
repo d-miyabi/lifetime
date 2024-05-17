@@ -72,6 +72,12 @@ height: 5vh;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+.page-show {
+  color: #4d4d4d;
+  align-items: center;
+  text-align: center;
+}
+
 /* スマホ表示時 */
 
 @media (max-width: 599px) {
