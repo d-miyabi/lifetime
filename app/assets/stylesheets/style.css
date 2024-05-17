@@ -76,11 +76,12 @@
 .header {
   display: flex;
   padding: 0 100px 0 30px;
-  font-size: 36px;
+  font-size: 40px;
   background-color: #E0ECFF;
   align-items: center;
   text-decoration: none;
   justify-content: space-between;
+  position: relative;
 }
 
 .header a {
@@ -91,11 +92,12 @@
 
 .nav {
   display: flex;
-  gap:20px;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .nav-btn {
-  position: relative;
   top:0;
   padding:10px 20px;
   border: 1px solid #ccc;
@@ -104,7 +106,6 @@
   outline: none;
   transition: all .3s;
   background-color: #f5f5f5;
-  top:-3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
