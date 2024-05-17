@@ -65,7 +65,7 @@ height: 5vh;
 }
 
 .mypage p {
-  width: 80%;
+  width: 100%;
   background: #f5f5f5;
   padding: 10px;
   margin: 10px;
@@ -76,6 +76,15 @@ height: 5vh;
   color: #4d4d4d;
   align-items: center;
   text-align: center;
+}
+
+
+/* タブレット表示時 */
+
+@media (max-width: 1024px) {
+  .mypage {
+  width: 80%;
+  }
 }
 
 /* スマホ表示時 */
