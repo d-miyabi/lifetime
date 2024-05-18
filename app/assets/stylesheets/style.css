@@ -86,7 +86,7 @@
 
 .header a {
   color: #4d4d4d;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.5px white;
   text-decoration: none;
 }
 
@@ -145,7 +145,7 @@
   text-align: center;
   padding: 10px 100px 10px 30px;
   color: #4d4d4d;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.5px white;
   font-size: 40px;
 }
 
