@@ -354,6 +354,10 @@ footer p {
   .search-form .search-input {
     width: 100%;
   }
+
+  .footer {
+    -webkit-text-stroke: 0px
+  }
   
   * {
     box-sizing: border-box;
