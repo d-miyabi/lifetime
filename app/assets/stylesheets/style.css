@@ -79,8 +79,9 @@
   background-color: #E0ECFF;
   align-items: center;
   text-decoration: none;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+  padding: 0 20px;
 }
 
 .header a {
@@ -91,6 +92,8 @@
 }
 
 .logo {
+  flex-grow: 1;
+  text-align: center;
   color: #4d4d4d;
 }
 
