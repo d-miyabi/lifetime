@@ -5,17 +5,19 @@ lock '~> 3.1'
 set :application, 'lifetime'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:d-miyabi/lifetime.git'
+set :repo_url, 'git@github.com:d-miyabi/lifetime.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+set :linked_dirs,
+    fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system',
+                                 'public/uploads')
 
 set :rbenv_type, :user
-set :rbenv_ruby, '3.2.0' #カリキュラム通りに進めた場合、’3.2.0’ です
+set :rbenv_ruby, '3.2.0' # カリキュラム通りに進めた場合、’3.2.0’ です
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                                  keys: ['~/.ssh/my-key-pair.pem'] 
+                  keys: ['~/.ssh/my-key-pair.pem']
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
