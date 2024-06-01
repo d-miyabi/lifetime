@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :move_to_index, except: %i[index show]
+  before_action :set_user_by_name, only: %i[show edit update]
 
   def index
     if user_signed_in?
