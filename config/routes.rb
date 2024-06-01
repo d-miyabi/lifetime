@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'home#index'
+
   resources :users, param: :name, only: [:index, :show, :edit, :update, :destroy]
   resources :personals, only: :edit
   resources :funerals, only: %i[edit show]
@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   resources :belongings, :edit
   resources :legacies, :edit
   resources :emotions, :friends
+
+  root to: 'users#index'
+
 end

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :move_to_index, except: %i[index show]
-  before_action :set_user_by_name, only: %i[show, :edit, :update, :destroy]
+  before_action :set_user_by_name, only: %i[show edit update destroy]
 
   def index
     if user_signed_in?
@@ -50,8 +50,7 @@ class UsersController < ApplicationController
   private
 
   def set_user_by_name
-    @user = User.find_by!(name: params[:name])
-    Rails.logger.debug "set_user_by_name: params[:name] = #{params[:name]}, @user = #{@user.inspect}"
+    @user = User.find_by(name: params[:name])
     unless @user
       redirect_to root_path, alert: "User not found"
     end
