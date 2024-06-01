@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'users#index'
-  resources :users, param: :name
+  root to: 'home#index'
+  resources :users, param: :name, only: [:index, :show, :edit, :update, :destroy]
   resources :personals, only: :edit
   resources :funerals, only: %i[edit show]
   resources :budgets, only: :edit
