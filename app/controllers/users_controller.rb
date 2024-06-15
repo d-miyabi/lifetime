@@ -12,8 +12,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    # @user
-    Rails.logger.debug "show: @user = #{@user.inspect}"
   end
 
   def new

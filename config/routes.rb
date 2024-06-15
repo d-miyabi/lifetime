@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   resources :budgets, only: :edit
   resources :chief_mourners, only: :edit
   resources :ashes, only: :edit
-  resources :posthumous_names, :edit
-  resources :belongings, :edit
-  resources :legacies, :edit
-  resources :emotions, :friends
+  resources :posthumous_names, only: :edit
+  resources :belongings, only: :edit
+  resources :legacies, only: :edit
+  resources :emotions, only: :friends
 
   root to: 'users#index'
 
