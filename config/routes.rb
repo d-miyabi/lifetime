@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :posthumous_names, only: :edit
   resources :belongings, only: :edit
   resources :legacies, only: :edit
-  resources :emotions, only: :friends
+  resources :emotions, :friends
 
   root to: 'users#index'
 
