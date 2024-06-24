@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <% stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <%= render'layouts/new_header' %>
+  <%= render'layouts/header' %>
   <body>
     <% @users.each do |user| %>
 
@@ -15,7 +15,7 @@
 
        <!-- 自分のこと -->
        <div class="service-item">
-         <%= link_to edit_personal_path(user), class: "link" do %>
+         <%= link_to edit_personal_path(current_user.name), class: "link" do %>
          <div class="item-wrapper">
          <p>自分のこと</p>
          <%= image_tag '自分のこと.jpeg', class: "center-image" %>
@@ -26,7 +26,7 @@
 
         <!-- 日々の想い -->
         <div class="service-item">
-          <%= link_to new_emotion_path(user), class: "link" do %>
+          <%= link_to new_emotion_path(current_user.name), class: "link" do %>
           <div class="item-wrapper">
           <p>日々の想い・言葉</p>
           <%= image_tag '日々の想い.jpeg' %>
@@ -37,7 +37,7 @@
 
         <!-- 葬式のこと -->
         <div class="service-item">
-          <%= link_to edit_funeral_path(user), class: "link" do %>
+          <%= link_to edit_funeral_path(current_user.name), class: "link" do %>
           <div class="item-wrapper">
           <p>葬式のこと</p>
           <%= image_tag '葬式のこと.png' %>
@@ -48,7 +48,7 @@
 
         <!-- 予算 -->
         <div class="service-item">
-          <%= link_to edit_budget_path(user), class: "link" do %>
+          <%= link_to edit_budget_path(current_user.name), class: "link" do %>
           <div class="item-wrapper">
           <p>予算</p>  
           <%= image_tag '予算.jpeg' %>
@@ -59,7 +59,7 @@
           
         <!-- 喪主のこと -->
         <div class="service-item">
-          <%= link_to edit_chief_mourner_path(user), class: "link"  do %>
+          <%= link_to edit_chief_mourner_path(current_user.name), class: "link"  do %>
           <div class="item-wrapper">
           <p>喪主のこと</p>  
           <%= image_tag '喪主.jpeg' %>
@@ -70,7 +70,7 @@
 
         <!-- 遺骨のこと -->
         <div class="service-item">
-          <%= link_to edit_ash_path(user), class:"link" do %>
+          <%= link_to edit_ash_path(current_user.name), class:"link" do %>
           <div class="item-wrapper">
           <p>遺骨のこと</p>
           <%= image_tag '遺骨.jpeg' %>
@@ -81,7 +81,7 @@
 
         <!-- 戒名 -->
         <div class="service-item">
-          <%= link_to edit_posthumous_name_path(user), class:"link" do %>
+          <%= link_to edit_posthumous_name_path(current_user.name), class:"link" do %>
           <div class="item-wrapper">
           <p>戒名</p>
           <%= image_tag '戒名.jpeg' %>
@@ -92,7 +92,7 @@
 
         <!-- 遺品整理 -->
         <div class="service-item">
-          <%= link_to edit_belonging_path(user), class:"link" do %>
+          <%= link_to edit_belonging_path(current_user.name), class:"link" do %>
           <div class="item-wrapper">
           <p>遺品整理</p>  
           <%= image_tag '遺品.jpeg' %>
@@ -103,7 +103,7 @@
 
         <!-- 遺産 -->
         <div class="service-item">
-          <%= link_to edit_legacy_path(user), class:"link" do %>
+          <%= link_to edit_legacy_path(current_user.name), class:"link" do %>
           <div class="item-wrapper">
           <p>遺産</p>
           <%= image_tag '遺産.jpeg' %>
@@ -114,7 +114,7 @@
 
         <!-- 友人・知人 -->
         <div class="service-item">
-          <%= link_to new_friend_path(user), class:"link" do %>
+          <%= link_to new_friend_path(current_user.name), class:"link" do %>
           <div class="item-wrapper">
           <p>友人・知人</p>
           <%= image_tag '友人.jpeg' %>

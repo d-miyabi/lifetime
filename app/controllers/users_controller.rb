@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :move_to_index, except: %i[index show]
+  before_action :set_user_by_name, only: %i[show edit update destroy]
 
   def index
     if user_signed_in?
@@ -11,7 +12,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = current_user
   end
 
   def new
@@ -29,17 +29,31 @@ class UsersController < ApplicationController
   end
 
   def edit
-    # @user = User.find(params[:id])
+    # @user
   end
 
   def update
-    user = User.find(params[:id])
-    user.update(user_params)
-    redirect_to root_path
+    if @user.update(user_params)
+      redirect_to user_path(@user.name), notice: 'User was successfully updated.'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @user.destroy
+    redirect_to root_path, notice: 'User was successfully destroyed.'
   end
 
   private
 
+  def set_user_by_name
+    @user = User.find_by(name: params[:name])
+    unless @user
+      redirect_to root_path, alert: "User not found"
+    end
+  end
+  
   def user_params
     params.require(:user).permit(:strengths, :hobbies, :skills,
                                  :funeral_wishes, :funeral_form, :posthumous_name_budget, :funeral_home_budget, :reword_budget, :others_budget, :chief_mourner, :kinship, :ashes, :posthumous_name, :belongings, :legacy, :emotion)
