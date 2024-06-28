@@ -2,3 +2,4 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "friends"
+//= require your_hamburger_menu_script_file
