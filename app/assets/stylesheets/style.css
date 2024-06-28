@@ -70,21 +70,6 @@
   border-color: #05a;
 }
 
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger-menu .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-
 /******************************************************** 
 　ヘッダー
 ********************************************************/
@@ -148,6 +133,20 @@
   background-color: #f5f5f5;
   top:-3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 * {
