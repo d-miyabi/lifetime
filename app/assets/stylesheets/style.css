@@ -97,6 +97,13 @@
   color: #4d4d4d;
 }
 
+.nav {
+  display: none;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .hamburger-menu {
   display: block;
   flex-direction: column;
@@ -109,13 +116,6 @@
   background-color: #333;
   margin: 4px 0;
   transition: 0.4s;
-}
-
-.nav {
-  display: none;
-  position: relative;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .nav.active {
