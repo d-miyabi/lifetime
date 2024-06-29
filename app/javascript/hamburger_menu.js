@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   hamburgerMenu.addEventListener("click", function() {
     navMenu.classList.toggle("active");
+    hamburgerMenu.classList.toggle("active")
     document.body.classList.toggle("no-scroll");
   });
 });

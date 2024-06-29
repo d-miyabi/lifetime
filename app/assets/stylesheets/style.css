@@ -106,6 +106,7 @@ body.no-scroll {
   display: block;
   cursor: pointer;
   z-index: 2;
+  position: relative;
 }
 
 .hamburger-menu .bar {
@@ -114,6 +115,36 @@ body.no-scroll {
   background-color: #333;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+.hamburger-menu .bar::before,
+.hamburger-menu .bar::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+}
+
+.hamburger-menu .bar::before {
+  top: -7px;
+}
+
+.hamburger-menu .bar::after {
+  bottom: -7px;
+}
+
+.hamburger-menu.active .bar {
+  background-color: transparent;
+}
+
+.hamburger-menu.active .bar::before {
+  transform: rotate(45deg) translateY(0);
+  background-color: #333;
+}
+
+.hamburger-menu.active .bar::after {
+  transform: rotate(-45deg) translateY(0);
+  background-color: #333;
 }
 
 .nav {
@@ -125,6 +156,7 @@ body.no-scroll {
   background-color: white;
   display: none;
   flex-direction: column;
+  align-items: center;
   padding-top: 60px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -134,10 +166,13 @@ body.no-scroll {
 }
 
 .nav-btn {
-  padding: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
   text-decoration: none;
   color: #333;
   border-bottom:  1px solid #ddd; 
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .nav-btn:hover {
@@ -162,6 +197,7 @@ body.no-scroll {
 * {
   box-sizing: border-box;
 }
+
 /******************************************************** 
 　フッター
 ********************************************************/
