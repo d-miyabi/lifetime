@@ -99,8 +99,8 @@
 
 .hamburger-menu {
   display: block;
-  flex-direction: column;
   cursor: pointer;
+  z-index: 2;
 }
 
 .hamburger-menu .bar {
@@ -112,10 +112,13 @@
 }
 
 .nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
   display: none;
-  position: relative;
-  justify-content: space-between;
-  gap: 20px;
+  flex-direction: column;
+  width: 200px;
 }
 
 .nav.active {
@@ -123,10 +126,10 @@
 }
 
 .nav-btn {
-  display: block;
-  padding:10px;
-  color: #333;
+  padding: 10px;
   text-decoration: none;
+  color: #333;
+  border-bottom:  1px solid #ddd; 
 }
 
 .nav-btn:hover {
