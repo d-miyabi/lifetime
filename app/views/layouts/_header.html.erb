@@ -4,6 +4,12 @@
       <h1>LifeTime</h1>
     </div>
   <% end %>
+  <div class="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
    <div class="nav">
     <% if user_signed_in? %>
       <%= link_to "マイページ", user_path(current_user.name), class: "nav-btn" %>
@@ -11,6 +17,9 @@
     <% else %>
       <%= link_to "ログイン", new_user_session_path, class: "nav-btn" %>
       <%= link_to "新規登録", new_user_registration_path, class: "nav-btn" %>
-    <% end %>
+    <% end %>    
   </div>
 </header>
+
+    <%= javascript_importmap_tags %>
+
