@@ -1,6 +1,13 @@
 /******************************************************** 
 　ログイン画面、新規登録画面
 ********************************************************/
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
 .login {
   width: 400px;
   margin: 16px auto;
@@ -419,9 +426,5 @@ footer p {
 
   .footer {
     -webkit-text-stroke: 0px
-  }
-  
-  * {
-    box-sizing: border-box;
   }
 }
